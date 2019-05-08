@@ -18,10 +18,7 @@ $(document).ready(function(){
     $("#sum_indicate").text(sum);
 
     // ここに、上記を参考にして平均点を出力する処理を書き込む
-    let avarage = 0;
-    for(let i=0; i<subject_points.length; i++) {
-        avarage = avarage + subject_points[i] / subject_points.length;
-    }
+    let avarage = Math.round(sum / subject_points.length);
     $("#avarage_indicate").text(avarage);
     // ここに、上記を参考にして平均点を出力する処理を書き込む
     
